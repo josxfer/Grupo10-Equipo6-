@@ -1,0 +1,31 @@
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    background-color: #ee1e46;
+    color: white;
+}
+
+table {
+    text-indent: initial;
+    border-spacing: 2px;
+    background-color: #1a1e25;
+}
+
+body {
+    line-height: 1.7;
+    font-weight: 300;
+    background-color: #222831;
+    font-size: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+tbody {
+    color: gray;
+}
+
