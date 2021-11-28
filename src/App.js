@@ -3,6 +3,8 @@ import { Navbar, NavbarBrand } from 'reactstrap';
 import Positions from './components/PositionsComponent';
 import './App.css';
 import { TEAMS } from './shared/teams'
+import Matches from './components/MatchesComponent';
+import { MATCHES } from './shared/matches';
 
 class App extends Component {
 
@@ -10,7 +12,8 @@ class App extends Component {
     super(pops);
 
     this.state = {
-      teams: TEAMS
+      teams: TEAMS,
+      matches: MATCHES
     };
   }
 
@@ -22,8 +25,11 @@ class App extends Component {
             <NavbarBrand href="/">Curling Tournaments</NavbarBrand>
           </div>
         </Navbar>
-        <div  style={{backgroundColor: '#1a1e25'}}>
-          <Positions teams={ this.state.teams}/>
+        <div className="container" style={{backgroundColor: '#1a1e25'}}>
+          <div className="row">
+            <Matches matches={ this.state.matches}/>
+            <Positions teams={ this.state.teams}/>
+          </div>
         </div>
       </div>
     );
