@@ -15,9 +15,6 @@ class Matches extends Component {
         const matches = this.props.matches.map((match) => {
             return(
                 <div className="widget-next-match">
-                    <div class="widget-title">
-                        <h3>Next Match</h3>
-                    </div>
                     <div class="widget-body mb-3">
                         <div class="widget-vs">
                             <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
@@ -40,7 +37,7 @@ class Matches extends Component {
                         <p class="mb-5">
                         <span class="d-block">{ match.date }</span>
                         <span class="d-block">{ match.hout }</span>
-                        <strong class="text-primary">{ match.place }</strong>
+                        <strong class="text-danger">{ match.place }</strong>
                         </p>
                     </div>
                 </div>               
@@ -49,6 +46,9 @@ class Matches extends Component {
 
         return (
             <div className="col-lg-6">
+                <div class="widget-title">
+                    <h3>Next Match</h3>
+                </div>
                 { matches }        
             </div>
         );

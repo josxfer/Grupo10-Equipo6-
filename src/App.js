@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
 import Positions from './components/PositionsComponent';
 import './App.css';
 import { TEAMS } from './shared/teams'
 import Matches from './components/MatchesComponent';
 import { MATCHES } from './shared/matches';
+import Header from './components/HeaderComponent'
 
 class App extends Component {
 
@@ -20,11 +20,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar dark color="dark">
-          <div className="container">
-            <NavbarBrand href="/">Curling Tournaments</NavbarBrand>
-          </div>
-        </Navbar>
+        <Header/>
         <div className="container" style={{backgroundColor: '#1a1e25'}}>
           <div className="row">
             <Matches matches={ this.state.matches}/>
