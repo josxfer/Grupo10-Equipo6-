@@ -4,7 +4,10 @@ import './App.css';
 import { TEAMS } from './shared/teams'
 import Matches from './components/MatchesComponent';
 import { MATCHES } from './shared/matches';
-import Header from './components/HeaderComponent'
+import Header from './components/HeaderComponent';
+import { BrowserRouter } from 'react-router-dom';
+import Home from './components/HomeComponent';
+import { Routes, Route, Redirect } from 'react-router-dom';
 
 class App extends Component {
 
@@ -18,16 +21,32 @@ class App extends Component {
   }
 
   render() {
+
+    const HomePage = () => {
+      return(
+        <Home/>
+      );
+    }
+
     return (
-      <div>
-        <Header/>
-        <div className="container" style={{backgroundColor: '#1a1e25'}}>
-          <div className="row">
-            <Matches matches={ this.state.matches}/>
-            <Positions teams={ this.state.teams}/>
+      <BrowserRouter>
+        <div>
+          <Header/>
+          <Home/>
+          <Routes>
+            <Route path="/home" Component={ HomePage }/>
+            <Route path="/tournaments" Component={ HomePage }/>
+            <Route path="/matches" Component={ HomePage }/>
+            <Route path="/positions" Component={ HomePage }/>
+          </Routes>
+          <div className="container" style={{backgroundColor: '#1a1e25'}}>
+            <div className="row">
+              <Matches matches={ this.state.matches}/>
+              <Positions teams={ this.state.teams}/>
+            </div>
           </div>
         </div>
-      </div>
+      </BrowserRouter>
     );
   }
 }
