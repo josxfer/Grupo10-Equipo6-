@@ -15,16 +15,16 @@ class Positions extends Component {
             return(
                 <tr>
                     <td>{team.position}</td>
-                    <td><strong class="text-white">{team.name}</strong></td>
+                    <td><strong className="text-white">{team.name}</strong></td>
                     <td>{team.points}</td>
                 </tr>
             );
         });
 
         return (
-            <div class="col-lg-6">            
-                <div class="widget-next-match">
-                    <table class="table custom-table">
+            <div className="col-lg-6">            
+                <div className="widget-next-match">
+                    <table className="table custom-table">
                         <thead>
                             <tr>
                                 <th>Position</th>
@@ -33,7 +33,7 @@ class Positions extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {positions}
+                            { positions }
                         </tbody>
                     </table>
                 </div>

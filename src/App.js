@@ -8,6 +8,8 @@ import Header from './components/HeaderComponent';
 import { BrowserRouter } from 'react-router-dom';
 import Home from './components/HomeComponent';
 import { Routes, Route, Redirect } from 'react-router-dom';
+import Footer  from './components/FooterComponent';
+import VS from './components/VSComponent'
 
 class App extends Component {
 
@@ -32,6 +34,7 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Header/>
+          <VS/>
           <Home/>
           <Routes>
             <Route path="/home" Component={ HomePage }/>
@@ -45,6 +48,7 @@ class App extends Component {
               <Positions teams={ this.state.teams}/>
             </div>
           </div>
+          <Footer/>
         </div>
       </BrowserRouter>
     );
