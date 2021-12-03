@@ -18,7 +18,7 @@ class App extends Component {
 
     this.state = {
       teams: TEAMS,
-      matches: MATCHES
+      matches: MATCHES,
     };
   }
 
@@ -34,7 +34,7 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Header/>
-          <VS/>
+          <VS matches={ this.state.matches}/>
           <Home/>
           <Routes>
             <Route path="/home" Component={ HomePage }/>

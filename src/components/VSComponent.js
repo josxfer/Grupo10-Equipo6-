@@ -20,12 +20,11 @@ class VS extends Component {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="d-flex team-vs">
-                                <span className="score">4-1</span>
+                                <span className="score">{ match.result }</span>
                                     <div className="team-1 w-50">
                                         <div className="team-details w-100 text-center">
-                                            {/* <img src="images/logo_1.png" alt="Image" class="img-fluid"> */}
-                                            <Media object src={ match.image2 } alt={ match.team2} style={{ maxWidth: 150}}/>
-                                            <h3>LA LEGA</h3>
+                                            <Media object src={ match.image1 } alt={ match.team1} style={{ maxWidth: 150}}/>
+                                            <h3>{ match.team1 }</h3>
                                             <ul className="list-unstyled">
                                                 <li>Anja Landry (7)</li>
                                                 <li>Eadie Salinas (12)</li>
@@ -36,8 +35,8 @@ class VS extends Component {
                                     </div>
                                 <div className="team-2 w-50">
                                     <div className="team-details w-100 text-center">
-                                        {/* <img src="images/logo_2.png" alt="Image" class="img-fluid"> */}
-                                        <h3>JUVENDU </h3>
+                                        <Media object src={ match.image2 } alt={ match.team2} style={{ maxWidth: 150}}/>
+                                        <h3>{ match.team2 } </h3>
                                         <ul className="list-unstyled">
                                             <li>Macauly Green (3)</li>
                                             <li>Arham Stark (8)</li>
@@ -54,10 +53,7 @@ class VS extends Component {
         });
 
         return (
-            <div className="col-lg-6">
-                <div className="widget-title">
-                    <h3>Next Match</h3>
-                </div>
+            <div>
                 { matches }        
             </div>
         );
