@@ -45,10 +45,7 @@ class Matches extends Component {
         });
 
         return (
-            <div className="col-lg-6">
-                <div className="widget-title">
-                    <h3>Next Match</h3>
-                </div>
+            <div>
                 { matches }        
             </div>
         );

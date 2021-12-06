@@ -21,22 +21,20 @@ class Positions extends Component {
             );
         });
 
-        return (
-            <div className="col-lg-6">            
-                <div className="widget-next-match">
-                    <table className="table custom-table">
-                        <thead>
-                            <tr>
-                                <th>Position</th>
-                                <th>Team</th>
-                                <th>Points</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            { positions }
-                        </tbody>
-                    </table>
-                </div>
+        return (         
+            <div className="widget-next-match">
+                <table className="table custom-table">
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Team</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        { positions }
+                    </tbody>
+                </table>
             </div>
         );
     }

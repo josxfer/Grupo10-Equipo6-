@@ -1,20 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Media } from 'reactstrap';
 
-
-class VS extends Component {
-
-    constructor(props) {
-        super (props);
-
-        this.state = {
-        }
-
-    }
-
-    render() {
-
-        const matches = this.props.matches.map((match) => {
+    function RendervsItem ({ match }) {
             return(
                 <div className="container">
                     <div className="row">
@@ -50,14 +37,23 @@ class VS extends Component {
                     </div>
                 </div>
             );
+        }
+
+    const VS = (props) => {
+        const vs = props.matches.map((match) => {
+            return(
+                <div key={match.id}>
+                    <RendervsItem match={match}/>
+                </div>
+            );
         });
 
         return (
             <div>
-                { matches }        
+                { vs }        
             </div>
         );
+
     }
-}
 
 export default VS;
