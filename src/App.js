@@ -1,10 +1,11 @@
-import React from 'react';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div>Hello World</div>
-  );
+import Admin from "./components/admin";
+
+class App extends React.Component{
+  render(){
+    return(<Admin/>)
+  }
 }
 
-export default App;
+export default App

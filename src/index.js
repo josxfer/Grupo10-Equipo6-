@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import Navegacion from './components/Encabezado/index';
+import Footer_admin from './components/footer_admin/index';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App/>, document.getElementById('root'))
+ReactDOM.render(<Navegacion/>, document.getElementById('navegacion'))
+ReactDOM.render(<Footer_admin/>, document.getElementById('footer_del_admin'))
