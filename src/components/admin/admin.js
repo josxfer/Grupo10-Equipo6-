@@ -8,7 +8,7 @@ class Admin extends React.Component{
     render(){
         return(
             <div>
-                <table class="table table-dark">
+                <table class="table">
                     <tr>
                         <td><Columnas_admin nombre='Id Usuario'/></td>
                         <td><Columnas_admin nombre='Nombre Usuario'/></td>
@@ -24,7 +24,8 @@ class Admin extends React.Component{
                         <td><Columnas_admin nombre='10'/></td>
                         <td><Columnas_admin nombre='Liga Diamante'/></td>
                         <td><Columnas_admin/>
-                            <Boton nombre_bt= 'Modificar'/>
+                            <Boton nombre_bt= 'Modificar'>
+                            </Boton>
                             <Boton nombre_bt= 'Eliminar'/>
                         </td>
                             
