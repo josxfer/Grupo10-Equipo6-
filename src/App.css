@@ -116,6 +116,7 @@ h1, h2, h3, h4, h5,
   background: #000; }
 
 .form-control {
+  margin: 5px;
   height: 43px;
   border-radius: 4px;
   background: none;
@@ -129,6 +130,10 @@ h1, h2, h3, h4, h5,
   .form-control:hover, .form-control:active, .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
+
+#submitform{
+  margin: 5px;
+}
 
 .site-section {
   padding: 2.5em 0; }

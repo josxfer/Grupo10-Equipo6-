@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Router } from 'react-router';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Card, CardImg, CardImgOverlay,} from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 class Header extends Component {
 
@@ -66,7 +66,7 @@ class Header extends Component {
                                     <h1>World Cup Event</h1>
                                     <p>Curling is a team sport, played on ice, where two teams take it in turns to slide stones made of granite towards a target – known as a House. It is an Olympic and Paralympic winter sport with medal disciplines for Women’s, Men’s, Mixed Doubles and mixed Wheelchair teams.</p>
                                     <p>
-                                        <a href="#" className="btn btn-danger py-3 px-4 mr-3">Create Tournamet</a>
+                                        <Link to="/newtournament" className="btn btn-danger py-3 px-4 mr-3">New Tournamet</Link>
                                         <a href="#" className="more light">Learn More</a>
                                     </p>  
                             </div>   
