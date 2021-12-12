@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 import Navegacion from "./Navegacion";
 import Inscripcion from "./Inscripcion";
@@ -11,13 +11,13 @@ class App extends React.Component{
       return(
         <Router>
           <Navegacion/>
-          <Switch>
+          <Routes>
           
             <Route path='/Inscripcion' exact component={Inscripcion}/>
             <Route path='/Modificar' component={Modificar}/>
             <Route path='/Resultados' component={Resultados}/>
           
-          </Switch>
+          </Routes>
         </Router>
         
       )
