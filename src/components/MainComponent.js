@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import Home from './HomePageComponent';
 import { Routes, Route } from 'react-router-dom';
-import { connect } from 'react-redux'
 import MatchesPage from './MatchesPageComponent'
 import Header from './HeaderComponent';
 import Footer  from './FooterComponent';
 import PositionsPage from './PositionsPageComponent';
 import NewTornament from './NewTournamentComponent';
-import { TEAMS } from '../shared/teams'
+import Tournaments from './TournamentsComponent';
+import Results from './ResultsComponent';
+import { TEAMS } from '../shared/teams';
 import { MATCHES } from '../shared/matches';
+import { TOURNAMENTS } from '../shared/tournaments';
+import NewMatch from './NewMatchComponent';
+import NewResult from './NewResultComponent';
 
 // const mapStateToProps = state => {
 //   return {
@@ -24,7 +28,8 @@ class Main extends Component {
 
     this.state ={
       teams: TEAMS,
-      matches: MATCHES
+      matches: MATCHES,
+      tournaments: TOURNAMENTS
     }
 
   }
@@ -35,10 +40,13 @@ class Main extends Component {
             <Header/>
             <Routes>
                 <Route path="/home" element={ <Home matches={ this.state.matches}  teams={ this.state.teams}/> }/>
-                <Route path="/tournaments" element={ <Home/> }/>
-                <Route path="/matches" element={ <MatchesPage matches={ this.state.matches}/> }/>
+                <Route path="/tournaments" element={ <Tournaments tournaments={ this.state.tournaments }/> }/>
+                <Route path="/matches" element={ <MatchesPage matches={ this.state.matches} teams={ this.state.teams}/> }/>
                 <Route path="/positions" element={ <PositionsPage  teams={ this.state.teams}/> }/>
                 <Route path="/newtournament" element={ <NewTornament/> }/>
+                <Route path="/results" element={ <Results matches={ this.state.matches}/> }/>
+                <Route path="/newmatch" element={ <NewMatch/> }/>
+                <Route path="/newresult" element={ <NewResult/> }/>
             </Routes>
             <Footer/>
         </div>

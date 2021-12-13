@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Label, Col, Row,  } from 'reactstrap';
+import { Button, Label, Col, Row, Input } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 
 // const required = (val) => val && val.length;
@@ -25,7 +25,7 @@ class NewTournament extends Component {
             <div className="container">
                 <div className="row row-content">
                     <div className="col-12">
-                        <h1>New Tournament</h1>
+                        <h1>Tournament Information</h1>
                         <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
                             <Row className="form-group">
                                 <Label htmlFor="tournamentname" md={2}>Tournament Name</Label>
@@ -67,9 +67,23 @@ class NewTournament extends Component {
                                 </Col>
                             </Row>
                             <Row className="form-group">
+                                <Label htmlFor="State" md={2}>State</Label>
+                                <Col md={10}>
+                                    <Control.select model=".state" id="state" name="State" placeholder="State" className="dropdown-menu-dark" 
+                                    // validators={{ required, minLength: minLength(3), maxLength: maxLength(15)}}
+                                    >
+                                        <option>Open Enrollment</option>
+                                        <option>Registrations Closed</option>
+                                        <option>In Progress</option>
+                                        <option>Finished</option>
+                                        <option>Cancelled</option>
+                                    </Control.select>
+                                </Col>
+                            </Row>
+                            <Row className="form-group">
                                 <Col md={{size:10, offset:2}}>
                                     <Button type="submit" id="submitform" color="danger">
-                                        Create Tournament
+                                        Save Tournament
                                     </Button>
                                 </Col>
                             </Row>

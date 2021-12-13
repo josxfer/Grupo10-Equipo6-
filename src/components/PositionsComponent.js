@@ -34,8 +34,8 @@ class Positions extends Component {
                     <tbody>
                         { positions }
                     </tbody>
-                </table>
-            </div>
+               </table>
+            </div> 
         );
     }
 
