@@ -1,6 +1,7 @@
 import React from "react";
 import '../soccer-master/css/bootstrap.min.css';
 
+
 class Footer_admin extends React.Component{
 
     render(){
