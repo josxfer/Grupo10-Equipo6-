@@ -33,7 +33,11 @@ class Footer_admin extends React.Component{
                       <h6 class="text-uppercase fw-bold mb-4">
                         Integrantes del Grupo
                       </h6>
-                      <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                      <p><i class="fas fa-home me-3"></i> Jose</p>
+                      <p><i class="fas fa-home me-3"></i> Denis</p>
+                      <p><i class="fas fa-home me-3"></i> Carlos</p>
+                      <p><i class="fas fa-home me-3"></i> Andres</p>
+                      <p><i class="fas fa-home me-3"></i> Gina</p>
                     </div>
                   </div>
                 </div>

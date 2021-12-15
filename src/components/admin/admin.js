@@ -5,9 +5,17 @@ import '../soccer-master/css/bootstrap.min.css';
 import Formulario_mod from "../modificar_admin";
 
 class Admin extends React.Component{
+    enviar=()=>{
+        console.log('Seccion de Modificar')//revisar la opcion de realizar a funcion desde esta parte
+    }
+
+    eliminar=()=>{
+        console.log('Seccion de eliminar')
+    }
+
     render(){
         return(
-            <div>
+            <div class='container'>
                 <table class="table">
                     <tr>
                         <td><Columnas_admin nombre='Id Usuario'/></td>
@@ -24,13 +32,11 @@ class Admin extends React.Component{
                         <td><Columnas_admin nombre='Jugador'/></td>
                         <td><Columnas_admin nombre='10'/></td>
                         <td><Columnas_admin nombre='Liga Diamante'/></td>
-                        <td><Columnas_admin nombre='Hola'>
-                                <Boton nombre_bt= 'Modificar' direccion={Formulario_mod}>
-                                </Boton>
-                                <Boton nombre_bt= 'Eliminar'/>
-                            </Columnas_admin>
+                        <td>
+                            <Boton funcion={this.enviar} nombre_bt= 'Modificar' direccion={Formulario_mod}>
+                            </Boton>
+                            <Boton funcion={this.eliminar} nombre_bt= 'Eliminar'/>
                         </td>
-                            
                     </tr>
                 </table>
             </div>
