@@ -7,3 +7,4 @@ class Formulario_mod extends React.Component{
         )
     }
 }
+export default Formulario_mod

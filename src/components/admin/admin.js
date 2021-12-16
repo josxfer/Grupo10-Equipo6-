@@ -1,7 +1,6 @@
 import React from "react";
 import Boton from "../Botones_admin/index";
 import Columnas_admin from "../columnas_admin";
-import '../soccer-master/css/bootstrap.min.css';
 
 
 class Admin extends React.Component{
