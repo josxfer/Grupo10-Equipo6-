@@ -5,6 +5,8 @@ import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap-social/bootstrap-social.css';
 import './index.css';
 import App from './App';
+import Navegacion from './components/Encabezado/index';
+import Footer_admin from './components/footer_admin/index';
 
 
 ReactDOM.render(
