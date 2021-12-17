@@ -5,12 +5,14 @@ import Datos from "./Datos";
 import Buscador from "./Buscador";
 import Tituloh2 from "./Tituloh2";
 import Tituloh3 from "./Tituloh3";
+import Navegacion from "../componentesUsuarioExterno/Navegacion";
 
 
 class Modificar extends React.Component{
   render(){
       return(
-         <div>
+         <div className="container">
+             <Navegacion/>
              <Tituloh1 Tituloh1="Modificar equipo"/>
              
              <Buscador/>

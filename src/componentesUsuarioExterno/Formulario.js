@@ -7,7 +7,7 @@ class Formulario extends React.Component{
   render(){
       return(
          <div>
-             <form class="row g-3 col-12">
+             <form class="row g-3 col-12 form-group">
                 <div class="col-5">
                   <label for="inputAddress2" class="form-label">Nombre del equipo</label>
                   <input type="text" class="form-control" id="inputAddress2" placeholder="..."/>
@@ -19,7 +19,7 @@ class Formulario extends React.Component{
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck"/>
                     <label class="form-check-label" for="gridCheck">
-                      Accepto termino y condiciones
+                      Acepto terminos y condiciones
                     </label>
                   </div>
                 </div>

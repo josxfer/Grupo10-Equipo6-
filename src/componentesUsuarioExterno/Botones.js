@@ -1,6 +1,4 @@
 import React from "react";
-import "./css/BotonesEstilo.module.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class Botones extends React.Component{

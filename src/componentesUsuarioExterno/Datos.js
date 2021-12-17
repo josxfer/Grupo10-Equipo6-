@@ -25,7 +25,7 @@ class Datos extends React.Component{
                 </div>
                 <div class="col-md-3">
                   <label for="inputState" class="form-label">Tipo de documento</label>
-                  <select id="inputState" class="form-select">
+                  <select id="inputState" class="form-select dropdown-menu-dark">
                     <option selected>Seleccione un documento</option>
                     <option >Cedula de Ciudadania</option>
                     <option>Cedula de extranjeria</option>
