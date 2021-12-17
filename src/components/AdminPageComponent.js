@@ -1,6 +1,7 @@
 import React from "react";
 import Admin from "./admin/admin";
 import Formulario_mod from './modificar_admin/formulario_mod_admin';
+import Nav from './Encabezado/nav_admin'
 
 
 class AdminPage extends React.Component{
@@ -14,7 +15,8 @@ class AdminPage extends React.Component{
 
 
     return(
-    <div>
+    <div className="container">
+      <Nav/>
       <Admin/>
       <Formulario_mod procesamiento={this.datosForm}/>
     </div>)

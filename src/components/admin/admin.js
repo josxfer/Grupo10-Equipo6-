@@ -1,12 +1,21 @@
 import React from "react";
 import Boton from "../Botones_admin/index";
 import Columnas_admin from "../columnas_admin";
-
+import Formulario_mod from "../modificar_admin";
 
 class Admin extends React.Component{
+    enviar=()=>{
+        console.log('Seccion de Modificar')//revisar la opcion de realizar a funcion desde esta parte
+    }
+
+    eliminar=()=>{
+        console.log('Seccion de eliminar')
+    }
+
     render(){
         return(
-            <div>
+            <div class='container'>
+                <h1>Usuarios Externos</h1>
                 <table class="table">
                     <tr>
                         <td><Columnas_admin nombre='Id Usuario'/></td>
@@ -15,19 +24,19 @@ class Admin extends React.Component{
                         <td><Columnas_admin nombre='Equipo'/></td>
                         <td><Columnas_admin nombre='Campeonato'/></td>
                         <td><Columnas_admin nombre='Accion'/></td>
+                        
                     </tr>
                     <tr>
-                    <td><Columnas_admin nombre='1'/></td>
+                        <td><Columnas_admin nombre='1'/></td>
                         <td><Columnas_admin nombre='Pepito'/></td>
                         <td><Columnas_admin nombre='Jugador'/></td>
                         <td><Columnas_admin nombre='10'/></td>
                         <td><Columnas_admin nombre='Liga Diamante'/></td>
-                        <td><Columnas_admin/>
-                            <Boton nombre_bt= 'Modificar'>
+                        <td>
+                            <Boton funcion={this.enviar} nombre_bt= 'Modificar' direccion={Formulario_mod}>
                             </Boton>
-                            <Boton nombre_bt= 'Eliminar'/>
+                            <Boton funcion={this.eliminar} nombre_bt= 'Eliminar'/>
                         </td>
-                            
                     </tr>
                 </table>
             </div>
