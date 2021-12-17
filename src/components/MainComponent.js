@@ -13,6 +13,11 @@ import { MATCHES } from '../shared/matches';
 import { TOURNAMENTS } from '../shared/tournaments';
 import NewMatch from './NewMatchComponent';
 import NewResult from './NewResultComponent';
+import AdminPage from './AdminPageComponent';
+import External from './ExternalPageComponent'
+import Inscripcion from "../componentesUsuarioExterno/Inscripcion";
+import Modificar from "../componentesUsuarioExterno/Modificar";
+import Resultados from "../componentesUsuarioExterno/Resultados";
 
 // const mapStateToProps = state => {
 //   return {
@@ -47,6 +52,11 @@ class Main extends Component {
                 <Route path="/results" element={ <Results matches={ this.state.matches}/> }/>
                 <Route path="/newmatch" element={ <NewMatch/> }/>
                 <Route path="/newresult" element={ <NewResult/> }/>
+                <Route path="/admin" element={ <AdminPage/> }/>
+                <Route path="/external" element={ <External/> }/>
+                <Route path='/Inscripcion' exact element={ <Inscripcion/> }/>
+                <Route path='/Modificar' element={ <Modificar/> }/>
+                <Route path='/Resultados' element={ <Resultados/>}/>
             </Routes>
             <Footer/>
         </div>
