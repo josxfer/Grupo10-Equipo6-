@@ -4,21 +4,27 @@ import '../soccer-master/css/bootstrap.min.css';
 class Navegacion extends React.Component{
 
     render(){
-        return(<nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Vista Administrador</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>)
+        return(
+        <nav class="navbar navbar-dark bg-dark">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active text-black" aria-current="page" href="#">Vista Administador</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Vistas</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-black" href="#">Vista Usuario Interno</a></li>
+                <li><a class="dropdown-item text-black" href="#">Vista Usuario Externo</a></li>
+                <li><a class="dropdown-item text-black" href="#">Agregar usuario Interno</a></li>
+                <li><hr class="dropdown-divider"/></li>
+                <li><a class="dropdown-item text-black" href="#">Salida Segura</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Usuarios Internos</a>
+            </li>
+          </ul>
+        </nav>)
     }
 }
 export default Navegacion;
