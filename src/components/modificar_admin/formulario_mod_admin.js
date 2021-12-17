@@ -15,13 +15,15 @@ class Formulario_mod extends React.Component{
     acceso= React.createRef()
 
     clickEnviar =()=>{
-
-       console.log(this.cedula.current.value)
-       console.log(this.nombre.current.value)
-       console.log(this.correo.current.value)
-       console.log(this.contraseña.current.value)
-       console.log(this.confirm_contra.current.value)
-       console.log(this.acceso.current.value)
+        const data = {
+            ced:this.cedula.current.value,
+            nom:this.nombre.current.value,
+            corr:this.correo.current.value,
+            cont:this.contraseña.current.value,
+            confim:this.confirm_contra.current.value,
+            acces:this.acceso.current.value
+        }
+        this.props.procesamiento(data)
         
     }
 

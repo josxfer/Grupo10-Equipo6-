@@ -6,7 +6,7 @@ class Cuadro_admin extends React.Component{
             <div class="container">
                 <label>{this.props.label}</label>
                 <br/>
-                <input onChange={this.props.evento} 
+                <input
                 ref={this.props.refe}
                 class="form-control w-50" 
                 placeholder={this.props.placeholder} 

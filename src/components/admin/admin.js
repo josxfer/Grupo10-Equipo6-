@@ -1,7 +1,6 @@
 import React from "react";
 import Boton from "../Botones_admin/index";
 import Columnas_admin from "../columnas_admin";
-import '../soccer-master/css/bootstrap.min.css';
 import Formulario_mod from "../modificar_admin";
 
 class Admin extends React.Component{
@@ -16,6 +15,7 @@ class Admin extends React.Component{
     render(){
         return(
             <div class='container'>
+                <h1>Usuarios Externos</h1>
                 <table class="table">
                     <tr>
                         <td><Columnas_admin nombre='Id Usuario'/></td>
