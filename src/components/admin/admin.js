@@ -2,6 +2,7 @@ import React from "react";
 import Boton from "../Botones_admin/index";
 import Columnas_admin from "../columnas_admin";
 import Formulario_mod from "../modificar_admin";
+import Navegacion from "../Encabezado/index";
 
 class Admin extends React.Component{
     enviar=()=>{
@@ -14,6 +15,8 @@ class Admin extends React.Component{
 
     render(){
         return(
+            <div>
+            <Navegacion name={'Vista Adminitrador'}/>
             <div className='container'>
                 <h1>Usuarios Externos</h1>
                 <table className="table">
@@ -39,6 +42,7 @@ class Admin extends React.Component{
                         </td>
                     </tr>
                 </table>
+                </div>
             </div>
         )
     }
