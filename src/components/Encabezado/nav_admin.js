@@ -1,5 +1,4 @@
 import React from "react";
-import '../soccer-master/css/bootstrap.min.css';
 
 class Navegacion extends React.Component{
 
@@ -8,7 +7,7 @@ class Navegacion extends React.Component{
         <nav class="navbar navbar-dark bg-dark">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link active text-black" aria-current="page" href="#">Vista Administador</a>
+              <a className="nav-link active text-black" aria-current="page" href="#">Vista Administador</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Vistas</a>
