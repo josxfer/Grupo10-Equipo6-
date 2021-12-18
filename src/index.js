@@ -4,7 +4,7 @@ import App from './App';
 import Navegacion from './components/Encabezado/index';
 import Footer_admin from './components/footer_admin/index';
 import Login from './components/login/index';
-import Registro from './components/Registro/index';
+import Registro from './components/Registro/Registro'
 
 ReactDOM.render(<App/>, document.getElementById('root'))
 ReactDOM.render(<Navegacion/>, document.getElementById('navegacion'))

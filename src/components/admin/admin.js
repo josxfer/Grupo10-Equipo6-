@@ -14,9 +14,9 @@ class Admin extends React.Component{
 
     render(){
         return(
-            <div class='container'>
+            <div className='container'>
                 <h1>Usuarios Externos</h1>
-                <table class="table">
+                <table className="table">
                     <tr>
                         <td><Columnas_admin nombre='Id Usuario'/></td>
                         <td><Columnas_admin nombre='Nombre Usuario'/></td>

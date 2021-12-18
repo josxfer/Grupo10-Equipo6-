@@ -1,2 +1,3 @@
-import Registro from "./Registro";
-export default Registro
+import FormularioGen from "./FormularioGen";
+
+export default FormularioGen
