@@ -7,7 +7,7 @@ import FormularioGen from '../Registro/index'
 class FormularioMod extends React.Component{
     render(){
         return(
-            <FormularioGen nombre_boton={'Guardar Cambios'}/>
+            <FormularioGen nombre_boton={'Guardar'}/>
         )
     }
 }

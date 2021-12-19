@@ -37,9 +37,6 @@ class UsuarioInterno extends React.Component{
                 <CuadroAdmin  label={'Confirmar Contraseña: '} 
                 placeholder={'*****'} type={'password'} 
                 name={'confir_contra_user'}/>
-                <CuadroAdmin  label={'Rol: '} 
-                placeholder={'Usuario Interno'} type={'text'} 
-                name={'Rol'}/>
                 <br/>
                 <Boton nombre_bt={this.props.nombre_boton}/>
             </form>

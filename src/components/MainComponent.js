@@ -13,7 +13,7 @@ import { MATCHES } from '../shared/matches';
 import { TOURNAMENTS } from '../shared/tournaments';
 import NewMatch from './NewMatchComponent';
 import NewResult from './NewResultComponent';
-import AdminPage from './AdminPageComponent';
+import Admin from './Admin/index';
 import External from './ExternalPageComponent'
 import Inscripcion from "../componentesUsuarioExterno/Inscripcion";
 import Modificar from "../componentesUsuarioExterno/Modificar";
@@ -55,12 +55,15 @@ class Main extends Component {
                 <Route path="/results" element={ <Results matches={ this.state.matches}/> }/>
                 <Route path="/newmatch" element={ <NewMatch/> }/>
                 <Route path="/newresult" element={ <NewResult/> }/>
-                <Route path="/admin" element={ <AdminPage/> }/>
+                <Route path="/admin" element={ <Admin/> }/>
                 <Route path="/external" element={ <External/> }/>
                 <Route path='/Inscripcion' exact element={ <Inscripcion/> }/>
                 <Route path='/Modificar' element={ <Modificar/> }/>
                 <Route path='/Resultados' element={ <Resultados/>}/>
-                <Route path="/Modificar" element={<FormularioMod/>}/>
+                {/* Modificar usuarios internos */}
+                <Route path="/ModificarUserIn" element={<FormularioMod/>}/>
+                <Route path="/RegistroUserIn" element={<FormularioMod/>}/>
+                {/* Ingreso general usuarios */}
                 <Route path="/Ingreso" element={<Login /> } />
                 <Route path="/Registro" element={<Registro /> } />
             </Routes>
