@@ -4,11 +4,11 @@ import FormularioGen from '../Registro/index'
 
 //Campo requerido para modificar los datos
 
-class Formulario_mod extends React.Component{
+class FormularioMod extends React.Component{
     render(){
         return(
             <FormularioGen nombre_boton={'Guardar Cambios'}/>
         )
     }
 }
-export default Formulario_mod;
+export default FormularioMod;

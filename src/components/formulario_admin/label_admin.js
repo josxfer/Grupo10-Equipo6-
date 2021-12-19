@@ -1,6 +1,6 @@
 import React from "react";
 
-class Cuadro_admin extends React.Component{
+class CuadroAdmin extends React.Component{
     render(){
         return(
             <div className="container">
@@ -16,4 +16,4 @@ class Cuadro_admin extends React.Component{
         )
     }
 }
-export default Cuadro_admin;
+export default CuadroAdmin;

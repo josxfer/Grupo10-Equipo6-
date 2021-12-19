@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Cuadro_admin from "../formulario_admin";
+//import { Link } from "react-router-dom";
+import CuadroAdmin from "../Formulario_admin";
 import Boton from "../Botones_admin";
 
-class Usuario_interno extends React.Component{
+class UsuarioInterno extends React.Component{
 
     enviar =(e)=>{
         e.preventDefault()
@@ -21,23 +21,23 @@ class Usuario_interno extends React.Component{
     render(){
         return(
             <form onSubmit={this.enviar} className='container'>
-                <Cuadro_admin label={'Numero de cedula:   '} 
+                <CuadroAdmin label={'Numero de cedula:   '} 
                 placeholder={'000001'} type={'text'} name={'cedula_user'}/>
-                <Cuadro_admin label={'Nombre Completo:   '} 
+                <CuadroAdmin label={'Nombre Completo:   '} 
                 placeholder={'Andres Felipe Franco'} type={'text'} 
                 name={'nombre_user'}/>
-                <Cuadro_admin  label={'Correo Electronico:   '} 
+                <CuadroAdmin  label={'Correo Electronico:   '} 
                 placeholder={'@'} type={'email'} name={'correo_user'}/>
-                <Cuadro_admin  label={'Nivel de Acceso:   '} 
+                <CuadroAdmin  label={'Nivel de Acceso:   '} 
                 placeholder={'Usuario Interno'} type={'text'} 
                 name={'acceso_user'}/>
-                <Cuadro_admin  label={'Contraseña:   '} 
+                <CuadroAdmin  label={'Contraseña:   '} 
                 placeholder={'*****'} type={'password'} 
                 name={'contra_user'}/>
-                <Cuadro_admin  label={'Confirmar Contraseña: '} 
+                <CuadroAdmin  label={'Confirmar Contraseña: '} 
                 placeholder={'*****'} type={'password'} 
                 name={'confir_contra_user'}/>
-                <Cuadro_admin  label={'Rol: '} 
+                <CuadroAdmin  label={'Rol: '} 
                 placeholder={'Usuario Interno'} type={'text'} 
                 name={'Rol'}/>
                 <br/>
@@ -47,4 +47,4 @@ class Usuario_interno extends React.Component{
         )
     }
 }
-export default Usuario_interno
+export default UsuarioInterno

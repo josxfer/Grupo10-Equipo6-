@@ -1,2 +1,2 @@
-import Boton from "./botones_admin";
+import Boton from "./Botones_admin";
 export default Boton

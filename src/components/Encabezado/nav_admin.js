@@ -11,7 +11,7 @@ class Navegacion extends React.Component{
               <Link className="nav-link active text-black" aria-current="page" to={'/'}>{this.props.name}</Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Vistas</a>
+              <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" to ={'/'} >Vistas</Link>
               <ul class="dropdown-menu">
                 <li><Link className="dropdown-item text-black" to={'/Ingreso'}>Vista Usuario Interno</Link></li>
                 <li><Link className="dropdown-item text-black" to={'/'}>Vista Usuario Externo</Link></li>
@@ -21,7 +21,7 @@ class Navegacion extends React.Component{
               </ul>
             </li>
             <li class="nav-item">
-              <lLink className="nav-link" to={'/'} >Usuarios Internos</lLink>
+              <Link className="nav-link" to={'/'} >Usuarios Internos</Link>
             </li>
           </ul>
         </nav>)
