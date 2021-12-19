@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 class Navegacion extends React.Component{
 
@@ -7,20 +8,20 @@ class Navegacion extends React.Component{
         <nav class="navbar navbar-dark bg-dark">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a className="nav-link active text-black" aria-current="page" href="#">{this.props.name}</a>
+              <Link className="nav-link active text-black" aria-current="page" to={'/'}>{this.props.name}</Link>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Vistas</a>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Vistas</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item text-black" href="#">Vista Usuario Interno</a></li>
-                <li><a class="dropdown-item text-black" href="#">Vista Usuario Externo</a></li>
-                <li><a class="dropdown-item text-black" href="#">Agregar usuario Interno</a></li>
+                <li><Link className="dropdown-item text-black" to={'/Ingreso'}>Vista Usuario Interno</Link></li>
+                <li><Link className="dropdown-item text-black" to={'/'}>Vista Usuario Externo</Link></li>
+                <li><Link className="dropdown-item text-black" to={'/'}>Agregar usuario Interno</Link></li>
                 <li><hr class="dropdown-divider"/></li>
-                <li><a class="dropdown-item text-black" href="#">Salida Segura</a></li>
+                <li><Link className="dropdown-item text-black" to={'/'}>Salida Segura</Link></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Usuarios Internos</a>
+              <lLink className="nav-link" to={'/'} >Usuarios Internos</lLink>
             </li>
           </ul>
         </nav>)

@@ -13,7 +13,7 @@
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "reactstrap": "^9.0.1",
     "web-vitals": "^1.1.2"
   },
@@ -40,5 +40,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Somos el  **Grupo 10 - Equipo 6** de la Mision TIC 2022 de la Universidad del Norte y a continuación te vamos a contar en qué consiste nuestro proyecto.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josxfer/Grupo10-Equipo6-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josxfer/Grupo10-Equipo6-/issues"
+  },
+  "homepage": ""
 }

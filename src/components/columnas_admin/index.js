@@ -1,2 +1,2 @@
-import Columnas_admin from "./columnas_admin";
+import Columnas_admin from "./Columnas_admin";
 export default Columnas_admin

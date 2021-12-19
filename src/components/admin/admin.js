@@ -1,12 +1,12 @@
 import React from "react";
 import Boton from "../Botones_admin/index";
-import Columnas_admin from "../columnas_admin";
-import Formulario_mod from "../modificar_admin";
+import Columnas_admin from "../Columnas_admin/index";
 import Navegacion from "../Encabezado/index";
+import { Link } from "react-router-dom";
 
 class Admin extends React.Component{
     enviar=()=>{
-        console.log('Seccion de Modificar')//revisar la opcion de realizar a funcion desde esta parte
+        <Link to={'/Modificar'}/>//revisar la opcion de realizar a funcion desde esta parte
     }
 
     eliminar=()=>{
@@ -36,9 +36,8 @@ class Admin extends React.Component{
                         <td><Columnas_admin nombre='10'/></td>
                         <td><Columnas_admin nombre='Liga Diamante'/></td>
                         <td>
-                            <Boton funcion={this.enviar} nombre_bt= 'Modificar' direccion={Formulario_mod}>
-                            </Boton>
-                            <Boton funcion={this.eliminar} nombre_bt= 'Eliminar'/>
+                            <Boton nombre_bt= 'Modificar' funcion={'/Modificar'}/>
+                            <Boton evento={'this.eliminar'} nombre_bt= 'Eliminar'/>
                         </td>
                     </tr>
                 </table>
