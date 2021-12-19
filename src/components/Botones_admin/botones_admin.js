@@ -4,8 +4,9 @@ class Boton extends React.Component{
 
     render(){
         return(<button  
-        class="btn btn-outline-primary" onClick={this.props.funcion}>
+        className="btn btn-outline-primary" onClick={this.props.evento}>
         {this.props.nombre_bt}
+        
         </button>)
     }
 }

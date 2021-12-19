@@ -18,6 +18,9 @@ import External from './ExternalPageComponent'
 import Inscripcion from "../componentesUsuarioExterno/Inscripcion";
 import Modificar from "../componentesUsuarioExterno/Modificar";
 import Resultados from "../componentesUsuarioExterno/Resultados";
+import FormularioMod from './Modificar_admin';
+import Login from './Login/index';
+import Registro from './Registro/Registro';
 
 // const mapStateToProps = state => {
 //   return {
@@ -57,6 +60,9 @@ class Main extends Component {
                 <Route path='/Inscripcion' exact element={ <Inscripcion/> }/>
                 <Route path='/Modificar' element={ <Modificar/> }/>
                 <Route path='/Resultados' element={ <Resultados/>}/>
+                <Route path="/Modificar" element={<FormularioMod/>}/>
+                <Route path="/Ingreso" element={<Login /> } />
+                <Route path="/Registro" element={<Registro /> } />
             </Routes>
             <Footer/>
         </div>

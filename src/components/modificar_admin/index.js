@@ -1,2 +1,2 @@
-import Formulario_mod from "./formulario_mod_admin";
-export default Formulario_mod;
+import FormularioMod from "./Formulario_mod_admin";
+export default FormularioMod;

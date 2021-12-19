@@ -1,2 +1,2 @@
-import Admin from "./admin";
+import Admin from "./Admin";
 export default Admin

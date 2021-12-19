@@ -1,2 +1,2 @@
-import Navegacion from "./nav_admin";
+import Navegacion from "./Nav_admin";
 export default Navegacion;
