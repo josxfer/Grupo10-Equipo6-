@@ -10,7 +10,7 @@ class Botones extends React.Component{
 
            }
          }>
-            <button type="button" class="btn btn-danger">{this.props.boton}</button>
+            <button type="button" className="btn btn-danger">{this.props.boton}</button>
          </div>
       )
   }

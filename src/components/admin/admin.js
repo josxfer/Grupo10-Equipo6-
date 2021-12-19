@@ -3,12 +3,17 @@ import Boton from "../Botones_admin/index";
 import ColumnasAdmin from "../Columnas_admin/index";
 import Navegacion from "../Encabezado/index";
 
+let clickenviar =()=>{
+    fetch("http://localhost:8080/")
+        .then((response)=> response.json())
+        .then((data)=> console.log(data));
+    console.log("Prueba")
+    
+};
 
 class Admin extends React.Component{
-    enviar=()=>{
-        console.log('Modificar')
-        
-    }
+
+    
 
     eliminar=()=>{
         console.log('Seccion de eliminar')
@@ -37,8 +42,8 @@ class Admin extends React.Component{
                         <td><ColumnasAdmin nombre='10'/></td>
                         <td><ColumnasAdmin nombre='Liga Diamante'/></td>
                         <td>
-                            <Boton nombre_bt= 'Modificar' funcion={this.enviar}/>
-                            <Boton evento={'this.eliminar'} nombre_bt= 'Eliminar'/>
+                            <Boton nombre_bt= 'Modificar' evento={this.clickenviar}/>
+                            <Boton evento={this.eliminar} nombre_bt= 'Eliminar'/>
                         </td>
                     </tr>
                 </table>

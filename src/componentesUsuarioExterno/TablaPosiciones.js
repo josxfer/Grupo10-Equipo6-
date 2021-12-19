@@ -12,7 +12,7 @@ class TablaPosiciones extends React.Component{
 
            }
          }>
-            <table class="table caption-top">
+            <table className="table caption-top">
                 
                 <thead>
                   <tr>

@@ -5,9 +5,9 @@ class Navegacion extends React.Component{
 
     render(){
         return(
-        <nav class="navbar navbar-dark bg-dark">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
+        <nav className="navbar navbar-dark bg-dark">
+          <ul className="nav nav-tabs">
+            <li className="nav-item">
               <Link className="nav-link active text-black" aria-current="page" to={'/'}>{this.props.name}</Link>
             </li>
             <li className="nav-item dropdown">
@@ -20,7 +20,7 @@ class Navegacion extends React.Component{
                 <li><Link className="dropdown-item text-black" to={'/'}>Salida Segura</Link></li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" to={'/'} >Usuarios Internos</Link>
             </li>
           </ul>

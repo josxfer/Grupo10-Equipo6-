@@ -47,11 +47,11 @@ function Footer(props) {
                     <div className="widget mb-3">
                         <h3>Social</h3>
                         <ul className="list-unstyled links">
-                            <li><a href="https://twitter.com/worldcurling" target="_blank" rel="noopener noreferrer" className="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a></li>
-                            <li><a href="https://www.instagram.com/worldcurling/" target="_blank" rel="noopener noreferrer" className="btn btn-social-icon btn-instagram"><span class="fa fa-instagram"></span></a></li>
-                            <li><a href="https://www.facebook.com/WorldCurlingFederation/" target="_blank" rel="noopener noreferrer" className="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a></li>
-                            <li><a href="https://www.linkedin.com/company/worldcurling/" target="_blank" rel="noopener noreferrer" className="btn btn-social-icon btn-linkedin"><span class="fa fa-linkedin"></span></a></li>
-                            <li><a href="https://www.youtube.com/user/WorldCurlingTV" target="_blank" rel="noopener noreferrer" className="btn btn-social-icon btn-youtube"><span class="fa fa-youtube"></span></a></li>
+                            <li><a href="https://twitter.com/worldcurling" target="_blank" rel="noopener noreferrer" className="btn btn-social-icon btn-twitter"><span className="fa fa-twitter"></span></a></li>
+                            <li><a href="https://www.instagram.com/worldcurling/" target="_blank" rel="noopener noreferrer" className="btn btn-social-icon btn-instagram"><span className="fa fa-instagram"></span></a></li>
+                            <li><a href="https://www.facebook.com/WorldCurlingFederation/" target="_blank" rel="noopener noreferrer" className="btn btn-social-icon btn-facebook"><span className="fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.linkedin.com/company/worldcurling/" target="_blank" rel="noopener noreferrer" className="btn btn-social-icon btn-linkedin"><span className="fa fa-linkedin"></span></a></li>
+                            <li><a href="https://www.youtube.com/user/WorldCurlingTV" target="_blank" rel="noopener noreferrer" className="btn btn-social-icon btn-youtube"><span className="fa fa-youtube"></span></a></li>
                         </ul>
                     </div>
                 </div>

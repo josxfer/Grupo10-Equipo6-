@@ -5,7 +5,7 @@ class TablaCFR extends React.Component{
   render(){
       return(
         <div>
-            <table class="table table-dark table-sm">
+            <table className="table table-dark table-sm">
                 <thead>
                     <tr>
                     <th scope="col">Local</th>

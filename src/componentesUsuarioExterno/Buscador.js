@@ -12,8 +12,8 @@ class Buscador extends React.Component{
             alignItems:'center'
            }
          }>
-            <div class="col-4">
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Ingrese el nombre del equipo"/>
+            <div className="col-4">
+                  <input type="text" className="form-control" id="inputAddress2" placeholder="Ingrese el nombre del equipo"/>
             </div>
             <Botones boton= "Buscar"/>
          </div>
