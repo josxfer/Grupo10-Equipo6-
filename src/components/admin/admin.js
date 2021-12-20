@@ -25,7 +25,7 @@ class Admin extends React.Component{
             <Navegacion name={'Vista Adminitrador'}/>
             <div className='container'>
                 <h1>Usuarios Externos</h1>
-                <table className="table">
+                <table className="table text-white">
                     <tr>
                         <td><ColumnasAdmin nombre='Id Usuario'/></td>
                         <td><ColumnasAdmin nombre='Nombre Usuario'/></td>

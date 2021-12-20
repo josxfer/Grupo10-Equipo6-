@@ -70,7 +70,7 @@ class Header extends Component {
                                     <h1>World Cup Event</h1>
                                     <p>Curling is a team sport, played on ice, where two teams take it in turns to slide stones made of granite towards a target – known as a House. It is an Olympic and Paralympic winter sport with medal disciplines for Women’s, Men’s, Mixed Doubles and mixed Wheelchair teams.</p>
                                     <p>
-                                        <Link to="/newtournament" className="btn btn-danger py-3 px-4 mr-3">New Tournamet</Link>
+                                        <Link to="/create_tournamet" className="btn btn-danger py-3 px-4 mr-3">New Tournamet</Link>
                                     </p>  
                             </div>   
                         </CardImgOverlay>
