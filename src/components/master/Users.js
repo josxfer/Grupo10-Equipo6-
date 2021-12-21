@@ -54,7 +54,6 @@ const Usuario = (
       <h1>Users</h1>
       <Tabla columnas={columnas} registros={usuarios} campos={campos_usuario} bus={actualizar_usuario}/>
       <Link to="/crear_usuario"><Button color="success"><span className="fa fa-plus-square"></span> New User</Button></Link>
-      <Link to='/dashboard'>Dashboard</Link>
       </div>
     </div>
   );

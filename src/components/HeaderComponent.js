@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Card, CardImg, CardImgOverlay,} from 'reactstrap';
+import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Card, CardImg, CardImgOverlay, Button} from 'reactstrap';
 import { NavLink, Link } from 'react-router-dom';
 
 class Header extends Component {
@@ -56,6 +56,15 @@ class Header extends Component {
                                 <NavItem>
                                     <NavLink className="nav-link" to="/results">
                                         <span className="fa fa-list"></span> Results
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>
+                            <Nav className='text-right'>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/crear_usuario">
+                                        <Button>
+                                            <span className='fa fa-sing-in fa-lg'></span>Sing In
+                                        </Button>
                                     </NavLink>
                                 </NavItem>
                             </Nav>

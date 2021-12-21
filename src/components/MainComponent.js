@@ -22,6 +22,7 @@ import FormularioMod from './Modificar_admin';
 import Login from './Login/index';
 import Registro from './Registro/Registro';
 import CrearUsuario from './master/CrearUsuario'
+import UpdateTornament from './master/UpdateTournament'
 
 // const mapStateToProps = state => {
 //   return {
@@ -69,6 +70,11 @@ class Main extends Component {
                 <Route path="/Registro" element={<Registro /> } />
                 {/* Registro de usuario */}
                 <Route path="/crear_usuario" element={<CrearUsuario /> } />
+                {/*CRUD Tournaments*/}
+                <Route path="/update_tournament/:id_tournament" element={<UpdateTornament
+                  // token={token} 
+                />}
+                />
             </Routes>
             <Footer/>
         </div>
